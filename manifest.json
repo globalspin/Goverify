@@ -1,0 +1,45 @@
+{
+"update_url":"http://clients2.google.com/service/update2/crx",
+  "name": "Goverify",
+  "version": "0.2",
+  "manifest_version": 2,
+  "options_page": "options.html",
+  "background_page": "background.html",
+  "permissions": [
+    "tabs",
+	"*://*blip.com/*",
+	"*://*disqus.com/*",
+	"*://*facebook.com/*",
+	"*://*flickr.com/*",
+	"*://*foursquare.com/*",
+	"*://*github.com/*",
+	"*://*ideascale.com/*",
+	"*://*linkedin.com/*",
+	"*://*meetup.com/*",
+	"*://*myspace.com/*",
+	"*://*posterous.com/*",
+	"*://*scribd.com/*",
+	"*://*slideshare.com/*",
+	"*://*socrata.com/*",
+	"*://*tumblr.com/*",
+	"*://*twitter.com/*",
+	"*://*uservoice.com/*",
+	"*://*ustream.com/*",
+	"*://*vimeo.com/*",
+	"*://*youtube.com/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+	"http://*/*"
+	  ],
+      "js": ["content.js"],
+	  "web_accessible_resources": ["javascripts/goverify.js","content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
