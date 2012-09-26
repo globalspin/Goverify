@@ -4,26 +4,26 @@
   "manifest_version": 2,
   "permissions": [
     "tabs",
-	"*://*blip.com/*",
-	"*://*disqus.com/*",
-	"*://*facebook.com/*",
-	"*://*flickr.com/*",
-	"*://*foursquare.com/*",
-	"*://*github.com/*",
-	"*://*ideascale.com/*",
-	"*://*linkedin.com/*",
-	"*://*meetup.com/*",
-	"*://*myspace.com/*",
-	"*://*posterous.com/*",
-	"*://*scribd.com/*",
-	"*://*slideshare.com/*",
-	"*://*socrata.com/*",
-	"*://*tumblr.com/*",
-	"*://*twitter.com/*",
-	"*://*uservoice.com/*",
-	"*://*ustream.com/*",
-	"*://*vimeo.com/*",
-	"*://*youtube.com/*"
+	"*://*.blip.com/*",
+	"*://*.disqus.com/*",
+	"*://*.facebook.com/*",
+	"*://*.flickr.com/*",
+	"*://*.foursquare.com/*",
+	"*://*.github.com/*",
+	"*://*.ideascale.com/*",
+	"*://*.linkedin.com/*",
+	"*://*.meetup.com/*",
+	"*://*.myspace.com/*",
+	"*://*.posterous.com/*",
+	"*://*.scribd.com/*",
+	"*://*.slideshare.com/*",
+	"*://*.socrata.com/*",
+	"*://*.tumblr.com/*",
+	"*://*.twitter.com/*",
+	"*://*.uservoice.com/*",
+	"*://*.ustream.com/*",
+	"*://*.vimeo.com/*",
+	"*://*.youtube.com/*"
   ],
   "icons": {
     "16": "icon16.png",
@@ -31,11 +31,12 @@
     "128": "icon128.png"
   },
   "browser_action": {
-    "default_icon": "icon16.png"
+    "default_icon": "icon16.png",
+    "default_title": "Goverify"
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*"],
+      "matches": ["*://*/*"],
       "js": ["content.js"],
 	  "css": ["app.css"],
 	  "web_accessible_resources": [
