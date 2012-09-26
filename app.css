@@ -1,0 +1,73 @@
+.goverify_addon_chrome
+ {
+ top:9px;
+ right:9px;
+ z-index: 1000;
+ min-width: 21%;
+ max-width: 21%;
+ min-height: 1px;
+ position: fixed;
+ background-color:#181818;
+ opacity:0.6;
+ -moz-border-radius: 20px;
+ -webkit-border-radius: 20px;
+ -khtml-border-radius: 20px;
+ border-radius: 20px;
+ -webkit-box-shadow: 9px 3px 5px rgba(50, 50, 50, 0.75);
+ -moz-box-shadow:    9px 3px 5px rgba(50, 50, 50, 0.75);
+ box-shadow:         9px 3px 5px rgba(50, 50, 50, 0.75);
+ font-family: times, Times New Roman, times-roman, georgia, serif;
+ color: #444;
+ margin: 0;
+ padding: 0px 0px 6px 0px;
+ font-size: 47px;
+ line-height: 40px;
+ letter-spacing: -2px;
+ }
+.goverify_content_chrome
+ {
+ padding-left:6px;
+ padding-right:6px;
+}
+
+.goverify_addon_chrome:hover
+ {
+ opacity:0.99;
+ }
+.goverify_addon_chrome:hover #goverify_addon_chrome_results
+ {
+ color:#fff;
+ }
+ 
+/*
+ *   Close
+ */
+.goverify_addon_chrome .close
+ {
+  text-align:right;
+  padding-right: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #bbb;
+  font-size: 10px;
+  font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 100;
+ }
+.goverify_addon_chrome .close:hover
+ {
+ cursor: hand;
+ cursor: pointer;
+ color: #1A72CA;
+ }
+
+/*
+ *   Results
+ */
+.goverify_addon_chrome #goverify_addon_chrome_results
+ {
+ font-size: 15px;
+ line-height: 18px;
+ letter-spacing: 0;
+ padding-bottom:12px;
+ padding-top:12px;
+ }
